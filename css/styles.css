@@ -1,0 +1,260 @@
+:root {
+    --primary-text-color: #757575;
+    --text-title-color: #212121;
+    --accent-color: #2196F3;
+}
+.list {
+    list-style: none;
+}
+/* main text color: #757575;
+ text title color: #212121;
+accent color: #2196F3;
+White color: #FFFFFF;
+secondary bg color: #F5F4FA;
+footer and main section bg color: #2F303A;
+footer contacts color: rgba(255, 255, 255, 0.6) */
+body {
+    color: var(--primary-text-color);
+    background-color: #fff;  
+    
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* Header style */
+
+.logo {
+    color: var(--text-title-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo-part {
+    color: var(--accent-color);
+}
+
+.site-nav a {
+    color: var(--text-title-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav a:hover, 
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+
+.contact-header a {
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contact-header a:hover,
+.contact-header a:focus {
+    color: var(--accent-color);
+}
+
+/* main content style */
+
+/* banner content */
+
+.banner{
+    background-color: #2F303A;
+}
+
+.banner-title {
+color: #FFFFFF;
+
+
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.banner-btn {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.banner-btn:hover,
+.banner-btn:focus {
+background-color: #188CE8;
+}
+
+/* section */
+
+.section-title{
+    color: var(--text-title-color);
+}
+
+.section .title {
+    color: var(--text-title-color);
+}
+
+/* advantage */
+
+.advantage .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.advantage p {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+}
+
+/* work */
+
+.work h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+/* team */
+
+.team {
+background-color: #F5F4FA;
+}
+
+.team h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-list h3 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+.team-list p {
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+/* footer */
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer > .logo {
+    color: #fff;
+}
+
+.address-link {
+    color: #fff;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--accent-color);
+}
+
+.footer-contact a {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus {
+    color: var(--accent-color)
+}
+
+/* portfolio */
+
+.portfolio {
+    background-color: #fff;
+}
+
+.filter button{
+    color: var(--text-title-color);
+    background: #F5F4FA;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.filter button:hover,
+.filter button:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+
+.examples h2 {
+    color: var(--text-title-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.examples p {
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+.examples a {
+    text-decoration: none;
+}
