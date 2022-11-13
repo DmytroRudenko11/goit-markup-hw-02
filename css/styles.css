@@ -2,6 +2,9 @@
     --primary-text-color: #757575;
     --text-title-color: #212121;
     --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --backgroung-color: #F5F4FA;
+    --secondary-bgc-color: #2F303A;
 }
 .list {
     list-style: none;
@@ -15,10 +18,25 @@ footer and main section bg color: #2F303A;
 footer contacts color: rgba(255, 255, 255, 0.6) */
 body {
     color: var(--primary-text-color);
-    background-color: #fff;  
+    background-color: var(--white-color);  
     
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 button {
@@ -34,7 +52,6 @@ button {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     text-decoration: none;
 }
 
@@ -46,7 +63,6 @@ button {
     color: var(--text-title-color);
 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -61,8 +77,7 @@ button {
     color: var(--primary-text-color);
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
@@ -77,11 +92,11 @@ button {
 /* banner content */
 
 .banner{
-    background-color: #2F303A;
+    background-color: var(--secondary-bgc-color);
 }
 
 .banner-title {
-color: #FFFFFF;
+color: var(--white-color);
 
 
     
@@ -94,7 +109,7 @@ color: #FFFFFF;
 }
 
 .banner-btn {
-    color: #FFFFFF;
+    color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
 
@@ -114,98 +129,76 @@ background-color: #188CE8;
 
 .section-title{
     color: var(--text-title-color);
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
-.section .title {
-    color: var(--text-title-color);
-}
 
 /* advantage */
 
-.advantage .title {
-    font-weight: 700;
+.subtitle {
+    color: var(--text-title-color);
+
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .advantage p {
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
+    line-height: 1.71;
 }
 
 /* work */
 
-.work h2 {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.03em;
-}
+
 
 /* team */
 
 .team {
-background-color: #F5F4FA;
+    background-color: var(--backgroung-color);
 }
 
-.team h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+
+
+.team-name {
+    color: var(--text-title-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
-.team-list h3 {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        letter-spacing: 0.03em;
-}
-
-.team-list p {
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        letter-spacing: 0.03em;
+.team-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
 /* footer */
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--secondary-bgc-color);
 }
 
 .footer > .logo {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .address-link {
-    color: #fff;
+    color: var(--white-color);
 
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     text-decoration: none;
     font-style: normal;
-}
-
-.address-link:hover,
-.address-link:focus {
-    color: var(--accent-color);
 }
 
 .footer-contact a {
     color: rgba(255, 255, 255, 0.6);
 
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     text-decoration: none;
 }
 
@@ -217,33 +210,31 @@ background-color: #F5F4FA;
 /* portfolio */
 
 .portfolio {
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 .filter button{
     color: var(--text-title-color);
-    background: #F5F4FA;
+    background: var(--backgroung-color);
     cursor: pointer;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .filter button:hover,
 .filter button:focus {
-    color: #FFFFFF;
+    color: var(--white-color);
     background-color: var(--accent-color);
 }
 
 .examples h2 {
     color: var(--text-title-color);
 
-    font-weight: 700;
     font-size: 18px;
-    line-height: 2.0;
+    line-height: 2;
     letter-spacing: 0.06em;
 }
 
@@ -252,7 +243,6 @@ background-color: #F5F4FA;
 
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
 }
 
 .examples a {
